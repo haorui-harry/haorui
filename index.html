@@ -2,31 +2,52 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Resume</title>
+	<title>Rui Hao - Resume</title>
 	<style type="text/css">
 		body {
-			font-family: Arial, sans-serif;
+			font-family: 'Open Sans', sans-serif;
 			font-size: 16px;
 			line-height: 1.5;
 			margin: 0;
 			padding: 0;
+			color: #333;
+			background-color: #f5f5f5;
+		}
+
+		.container {
+			max-width: 960px;
+			margin: 0 auto;
+			padding: 20px;
+		}
+
+		header {
+			background-color: #fff;
+			padding: 20px;
+			border-bottom: 1px solid #ccc;
 		}
 
 		h1, h2 {
 			font-weight: bold;
 			margin: 0 0 10px;
+			text-align: center;
 		}
 
 		h1 {
-			font-size: 32px;
+			font-size: 36px;
+			color: #2c3e50;
 		}
 
 		h2 {
-			font-size: 24px;
+			font-size: 28px;
+			color: #2c3e50;
 		}
 
 		section {
-			margin: 20px 0;
+			margin: 40px 0;
+			padding: 20px;
+			background-color: #fff;
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 		}
 
 		ul {
@@ -38,67 +59,110 @@
 		ul li {
 			margin: 0 0 10px;
 			padding: 0;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
 		}
 
 		ul li:last-child {
 			margin-bottom: 0;
 		}
 
-		.skill {
+		ul li span {
+			flex-basis: 150px;
+			font-weight: bold;
+		}
+
+		ul li p {
+			margin: 0;
+			flex-grow: 1;
+		}
+
+		.skills {
+			display: flex;
+			flex-wrap: wrap;
 			margin: 10px 0;
 		}
 
-		.skill li {
-			display: inline-block;
+		.skills li {
 			background-color: #eee;
 			color: #333;
 			padding: 5px 10px;
 			margin-right: 10px;
+			margin-bottom: 10px;
 			border-radius: 5px;
 			box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+			font-weight: bold;
+		}
+
+		@media screen and (max-width: 767px) {
+			h1 {
+				font-size: 28px;
+			}
+
+			h2 {
+				font-size: 24px;
+			}
+
+			ul li {
+				flex-wrap: nowrap;
+			}
+
+			ul li span {
+				flex-basis: auto;
+				margin-right: 10px;
+			}
+
+			ul li p {
+				flex-grow: initial;
+			}
+
+			.skills li {
+				margin-right: 5px;
+				margin-bottom: 5px;
+				font-size: 12px;
+			}
 		}
 	</style>
 </head>
 <body>
-	<header>
-		<h1>Rui Hao</h1>
-		<p>Undergraduate Student</p>
-		<ul>
-			<li>Tel: +86 18231010221</li>
-				<li>Email: haorui24offer@163.com</li>
-				<li>Address: Unknown</li>
+	<div class="container">
+		<header>
+			<h1>Rui Hao</h1>
+			<p>Undergraduate Student</p>
+			<ul>
+				<li><span>电话：</span> +86 18231010221</li>
+				<li><span>Email:</span> haorui24offer@163.com</li>
 		</ul>
 	</header>
 
 	<main>
 		<section>
-			<h2>Profile</h2>
-			<p>I am an undergraduate student majoring in Computer Science. I have a strong interest in the fields of Natural Language Processing and Database, and actively participate in research and practical projects with the hope of delving deeper into these fields.</p>
-		</section>
-
-		<section>
 			<h2>Education</h2>
 			<ul>
 				<li>
-					<h3>Undergraduate Student - Beijing University of Posts and Telecommunications (2020.09-present)</h3>
-					<p>Computer Science, GPA: 3.69/4.0</p>
-					<p>Related courses: Advanced Mathematics A (I) (91), Computing and Programming Practicum (90), Linear Algebra (97), Advanced Mathematics A (II) (94), Introduction to Computing and Foundation of Programming (97), Discrete Mathematics (I) (89), An Introduction to Blockchain Technology (95), Fundamentals of Database Design (90), Physics Experiment A (Good), Introduction to Computer Systems (92), Digital Logic and Digital System (90), Python Data Analysis and Visualization (93), Operating System (95), Principles of Database Systems (91)</p>
+					<h3>Beijing University of Posts and Telecommunications</h3>
+					<p>Undergraduate student</p>
+					<p>Major: Computer Science</p>
+					<p>GPA: 3.69/4.0</p>
+					<p>Related courses:</p>
+					<ul class="skills">
+						<li>Advanced Mathematics A (I) (91)</li>
+						<li>Computing and Programming Practicum (90)</li>
+						<li>Linear Algebra (97)</li>
+						<li>Advanced Mathematics A (II) (94)</li>
+						<li>Introduction to Computing and Foundation of Programming (97)</li>
+						<li>Discrete Mathematics (I) (89)</li>
+						<li>An Introduction to Blockchain Technology (95)</li>
+						<li>Fundamentals of Database Design (90)</li>
+						<li>Physics Experiment A (Good)</li>
+						<li>Introduction to Computer Systems (92)</li>
+						<li>Digital Logic and Digital System (90)</li>
+						<li>Python Data Analysis and Visualization (93)</li>
+						<li>Operating System (95)</li>
+						<li>Principles of Database Systems (91)</li>
+					</ul>
 				</li>
-			</ul>
-		</section>
-
-		<section>
-			<h2>Work Experience</h2>
-			<p>None</p>
-		</section>
-
-		<section>
-			<h2>Skills & Certifications</h2>
-			<ul class="skill">
-				<li>Natural Language Processing</li>
-				<li>Database Design</li>
-				<li>Data Mining</li>				
-                <li>High-Dimensional Index</li>
 			</ul>
 		</section>
 
@@ -130,10 +194,12 @@
 					<p>Researching issues related to approximate query processing in database.</p>
 					<p>Read several papers on approximate query processing.</p>
 					<p>Reproducing papers that use GAN to generate samples and making innovations in sample generation.</p>
-				</li>
-			</ul>
+			</li>
+		</ul>
 		</section>
 	</main>
-</body>
+	</div>
+
+	</body>
 </html>
 
