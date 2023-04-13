@@ -4,64 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>个人简历</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- 页眉 -->
-    <header>
-        <h1>张三的个人简历</h1>
-    </header>
+    <div class="container">
+        <!-- 页眉 -->
+        <header>
+            <h1 class="display-4 text-center my-5">张三的个人简历</h1>
+        </header>
 
-    <!-- 个人信息 -->
-    <section id="personal-info">
-        <h2>个人信息</h2>
-        <ul>
-            <li>电话: 13888888888</li>
-            <li>邮箱: zhangsan@example.com</li>
-            <li>地址: 北京市朝阳区</li>
-        </ul>
-    </section>
+        <!-- 个人信息 -->
+        <section id="personal-info">
+            <h2 class="mb-4">个人信息</h2>
+            <ul class="list-unstyled">
+                <li>电话: 13888888888</li>
+                <li>邮箱: zhangsan@example.com</li>
+                <li>地址: 北京市朝阳区</li>
+            </ul>
+        </section>
 
-    <!-- 教育经历 -->
-    <section id="education">
-        <h2>教育经历</h2>
-        <ul>
-            <li>2018-2022: 清华大学，计算机科学与技术专业，学士学位</li>
-        </ul>
-    </section>
+        <!-- 教育经历 -->
+        <section id="education">
+            <h2 class="my-4">教育经历</h2>
+            <ul class="list-unstyled">
+                <li>2018-2022: 清华大学，计算机科学与技术专业，学士学位</li>
+            </ul>
+        </section>
 
-    <!-- 工作经历 -->
-    <section id="work-experience">
-        <h2>工作经历</h2>
-        <ul>
-            <li>2022-至今: 字节跳动，软件工程师</li>
-        </ul>
-    </section>
+        <!-- 工作经历 -->
+        <section id="work-experience">
+            <h2 class="my-4">工作经历</h2>
+            <ul class="list-unstyled">
+                <li>2022-至今: 字节跳动，软件工程师</li>
+            </ul>
+        </section>
 
-    <!-- 项目经历 -->
-    <section id="projects">
-        <h2>项目经历</h2>
-        <ul>
-            <li><a href="https://github.com/zhangsan/project-1">项目1: 一个很酷的Web应用程序</a></li>
-            <li><a href="https://github.com/zhangsan/project-2">项目2: 一个实用的移动应用程序</a></li>
-        </ul>
-    </section>
+        <!-- 项目经历 -->
+        <section id="projects">
+            <h2 class="my-4">项目经历</h2>
+            <ul class="list-unstyled">
+                <li><a href="https://github.com/zhangsan/project-1">项目1: 一个很酷的Web应用程序</a></li>
+                <li><a href="https://github.com/zhangsan/project-2">项目2: 一个实用的移动应用程序</a></li>
+            </ul>
+        </section>
 
-    <!-- 技能 -->
-    <section id="skills">
-        <h2>技能</h2>
-        <ul>
-            <li>Python</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Node.js</li>
-            <li>HTML/CSS</li>
-        </ul>
-    </section>
-
-    <!-- 页脚 -->
-    <footer>
-        <p>© 2023 张三的个人简历</p>
+        <!-- 技能 -->
+        <section id="skills">
+            <h2 class="my-4">技能</h2>
+            <ul class="list-inline">
+                <li class="list-inline-item">Python</li>
+                <li class="list-inline-item">JavaScript</li>
+                <li class="list-inline-item">React</li>
+                <li class="list-inline-item">Node.js</li>
+                <li class="list-inline-item">HTML/CSS</li>
+</ul>
+</section>
+            <!-- 页脚 -->
+    <footer class="text-center mt-5">
+        <p class="mb-0">© 2023 张三的个人简历</p>
     </footer>
+</div>
 </body>
 </html>
