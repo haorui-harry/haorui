@@ -1,73 +1,139 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>个人简历</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="styles.css">
+	<meta charset="utf-8">
+	<title>Resume</title>
+	<style type="text/css">
+		body {
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+			line-height: 1.5;
+			margin: 0;
+			padding: 0;
+		}
+
+		h1, h2 {
+			font-weight: bold;
+			margin: 0 0 10px;
+		}
+
+		h1 {
+			font-size: 32px;
+		}
+
+		h2 {
+			font-size: 24px;
+		}
+
+		section {
+			margin: 20px 0;
+		}
+
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+
+		ul li {
+			margin: 0 0 10px;
+			padding: 0;
+		}
+
+		ul li:last-child {
+			margin-bottom: 0;
+		}
+
+		.skill {
+			margin: 10px 0;
+		}
+
+		.skill li {
+			display: inline-block;
+			background-color: #eee;
+			color: #333;
+			padding: 5px 10px;
+			margin-right: 10px;
+			border-radius: 5px;
+			box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+		}
+	</style>
 </head>
 <body>
-    <div class="container">
-        <!-- 页眉 -->
-        <header>
-            <h1 class="display-4 text-center my-5">Rui Hao</h1>
-        </header>
+	<header>
+		<h1>Rui Hao</h1>
+		<p>Undergraduate Student</p>
+		<ul>
+			<li>Tel: +86 18231010221</li>
+				<li>Email: haorui24offer@163.com</li>
+				<li>Address: Unknown</li>
+		</ul>
+	</header>
 
-        <!-- 个人信息 -->
-        <section id="personal-info">
-            <h2 class="mb-4">personal information</h2>
-            <ul class="list-unstyled">
-                <li>phone: 18231010221</li>
-                <li>email: haorui@bupt.edu.cn</li>
-            </ul>
-        </section>
+	<main>
+		<section>
+			<h2>Profile</h2>
+			<p>I am an undergraduate student majoring in Computer Science. I have a strong interest in the fields of Natural Language Processing and Database, and actively participate in research and practical projects with the hope of delving deeper into these fields.</p>
+		</section>
 
-        <!-- 教育经历 -->
-        <section id="education">
-            <h2 class="my-4">教育经历</h2>
-            <ul class="list-unstyled">
-                <li>2020-: 北京邮电大学，计算机科学与技术专业，本科生</li>
-            </ul>
-        </section>
+		<section>
+			<h2>Education</h2>
+			<ul>
+				<li>
+					<h3>Undergraduate Student - Beijing University of Posts and Telecommunications (2020.09-present)</h3>
+					<p>Computer Science, GPA: 3.69/4.0</p>
+					<p>Related courses: Advanced Mathematics A (I) (91), Computing and Programming Practicum (90), Linear Algebra (97), Advanced Mathematics A (II) (94), Introduction to Computing and Foundation of Programming (97), Discrete Mathematics (I) (89), An Introduction to Blockchain Technology (95), Fundamentals of Database Design (90), Physics Experiment A (Good), Introduction to Computer Systems (92), Digital Logic and Digital System (90), Python Data Analysis and Visualization (93), Operating System (95), Principles of Database Systems (91)</p>
+				</li>
+			</ul>
+		</section>
 
-        <!-- 工作经历 -->
-        <section id="work-experience">
-            <h2 class="my-4">研究经历</h2>
-            <ul class="list-unstyled">
-                <li>2022-至今: 字节跳动，软件工程师</li>
-            </ul>
-        </section>
+		<section>
+			<h2>Work Experience</h2>
+			<p>None</p>
+		</section>
 
-        <!-- 项目经历 -->
-        <section id="projects">
-            <h2 class="my-4">项目经历</h2>
-            <ul class="list-unstyled">
-                <li><a href="https://github.com/zhangsan/project-1">项目1: 一个很酷的Web应用程序</a></li>
-                <li><a href="https://github.com/zhangsan/project-2">项目2: 一个实用的移动应用程序</a></li>
-            </ul>
-        </section>
+		<section>
+			<h2>Skills & Certifications</h2>
+			<ul class="skill">
+				<li>Natural Language Processing</li>
+				<li>Database Design</li>
+				<li>Data Mining</li>				
+                <li>High-Dimensional Index</li>
+			</ul>
+		</section>
 
-        <!-- 技能 -->
-        <section id="skills">
-            <h2 class="my-4">技能</h2>
-            <ul class="list-inline">
-                <li class="list-inline-item">Python</li>
-                <li class="list-inline-item">JavaScript</li>
-                <li class="list-inline-item">React</li>
-                <li class="list-inline-item">Node.js</li>
-                <li class="list-inline-item">HTML/CSS</li>
-            </ul>
-        </section>
-
-        <!-- 页脚 -->
-        <footer class="text-center mt-5">
-            <p class="mb-0">© 2023 Rui Hao</p>
-</footer>
-</div>
-
+		<section>
+			<h2>Research Experience</h2>
+			<ul>
+				<li>
+					<h3>Research in the Natural Language Processing Group of BUPT</h3>
+					<p>Learned the idea of introducing scene graph and external knowledge graph for question and answer.</p>
+					<p>Learned from GQA articles, such as understanding the importance of triplets, to build the ternary group for asking and answering from various modal data.</p>
+					<p>Introduced knowledge graph as external knowledge to improve the accuracy of the model.</p>
+					<p>Submitted a paper at the ACL2023 conference as a participant author.</p>
+				</li>
+				<li>
+					<h3>Research in the Database Group of Tsinghua University</h3>
+					<p>Conducted data mining and high-dimensional index related research.</p>
+					<p>Learned a variety of clustering methods and multiple database indexes.</p>
+					<p>Studied the use of learning index on multimodal data.</p>
+					<p>Cooperated with Peking University People’s Hospital and studied the sequential clustering of patient characteristics and drug recommendation.</p>
+				</li>
+				<li>
+					<h3>Gamma Lab Research in BUPT</h3>
+					<p>Learned the knowledge of the graph neural network GCN, GAT, and implemented them in code.</p>
+					<p>Tried to use graph neural network to solve problems related to the NLP field, such as heterograph, hypergraph and so on.</p>
+					<p>Studying how to use graph neural network to solve the problem of personality detection and recommendation system.</p>
+				</li>
+				<li>
+					<h3>Collaborating with a postdoctoral fellow at Nanyang Technological University</h3>
+					<p>Researching issues related to approximate query processing in database.</p>
+					<p>Read several papers on approximate query processing.</p>
+					<p>Reproducing papers that use GAN to generate samples and making innovations in sample generation.</p>
+				</li>
+			</ul>
+		</section>
+	</main>
 </body>
 </html>
+
